@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf--8">
+    <title>AutnLog</title>
+  </head>
+
+  <body>
+    <h1>hows your day !!!!</h1>
+    <!-- rendering the data from backed on the web page -->
+  {% for movie in movies %}
+    <ul>
+      <li><a href={{movie.id}} style="text-decoration: none; color: cornflowerblue;">{{movie.title}}</a></li>
+    </ul>
+  {%endfor%}
+  <a href="/authenticationproj/add">
+  <input style="background-color: aqua;border: none;border-radius:1em;cursor: pointer;" type ="submit" value="Add_Movie" >
+  </a>
+  </body>
+</html>

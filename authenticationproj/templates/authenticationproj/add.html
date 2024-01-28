@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>add_movies</title>
+  </head>
+
+  <body>
+    <form action ="/authenticationproj/add" method="POST">
+      <!-- cross side request frogery to prevent from unknown person altering the data here -->>
+      {% csrf_token %}
+      <label for="add"></label>
+      <input type="text" placeholder="movie_title" name="title" id="title">
+      <input type="text" placeholder="year" name="year" id="year">
+      <hr>
+      <button type="submit" value="">Submit</button>
+      
+
+    </form>
+  </body>
+
+</html>
+
